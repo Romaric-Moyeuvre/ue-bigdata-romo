@@ -5,6 +5,7 @@ MOYEUVRE Romaric
 ## Requêtes
 
 Batch OpenWeatherMap         Bilan hebdomadaire
+
 Streaming OpenWeatherMap     Bilan hebdomadaire
 
 ## Bonus
