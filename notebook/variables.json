@@ -1,0 +1,95 @@
+{
+    "apikey": "d1c4e613979401125dffb1ac012024cc",
+    "kafka": 
+    {
+        "broker": "kafka1:9092",
+        "topic": "weather"
+    },
+    "locations": 
+    {
+        "brest": 
+        {
+            "lat": 48.35828,
+            "lon": -4.57039
+        },
+        "nantes": 
+        {
+            "lat": 47.28224,
+            "lon": -1.52077
+        },
+        "rennes": 
+        {
+            "lat": 48.12036,
+            "lon": -1.62862
+        }
+    },
+    "plants": 
+    {
+        "tomato": 
+        {
+            "sun_min": 6,
+            "sun_max": 8,
+            "temp_opt_min": 20,
+            "temp_opt_max": 27,
+            "temp_min": 10,
+            "temp_max": 35,
+            "water_min": 25,
+            "water_max": 50
+        },
+        "lettuce": 
+        {
+            "sun_min": 3,
+            "sun_max": 5,
+            "temp_opt_min": 10,
+            "temp_opt_max": 20,
+            "temp_min": 4,
+            "temp_max": 30,
+            "water_min": 20,
+            "water_max": 30
+        },
+        "carrot": 
+        {
+            "sun_min": 6,
+            "sun_max": 8,
+            "temp_opt_min": 15,
+            "temp_opt_max": 25,
+            "temp_min": 5,
+            "temp_max": 30,
+            "water_min": 15,
+            "water_max": 25
+        },
+        "zucchini": 
+        {
+            "sun_min": 6,
+            "sun_max": 8,
+            "temp_opt_min": 20,
+            "temp_opt_max": 30,
+            "temp_min": 10,
+            "temp_max": 35,
+            "water_min": 30,
+            "water_max": 50
+        },
+        "bean": 
+        {
+            "sun_min": 6,
+            "sun_max": 8,
+            "temp_opt_min": 18,
+            "temp_opt_max": 28,
+            "temp_min": 10,
+            "temp_max": 32,
+            "water_min": 20,
+            "water_max": 40
+        },
+        "potato": 
+        {
+            "sun_min": 5,
+            "sun_max": 7,
+            "temp_opt_min": 15,
+            "temp_opt_max": 22,
+            "temp_min": 3,
+            "temp_max": 30,
+            "water_min": 20,
+            "water_max": 40
+        }
+    }
+}

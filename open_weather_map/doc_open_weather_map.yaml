@@ -1,0 +1,248 @@
+queries:
+- query: https://openweathermap.org/api/one-call-3/onecall
+  parameters:
+    lat:
+      type: float
+      required: true
+    lon:
+      type: float
+      required: true
+    appid:
+      type: string
+      required: true
+    exclude:
+      type: string
+      required: false
+      description: "Comma-delimited list. Available values: current, minutely, hourly, daily, alerts"
+    units:
+      type: string
+      required: false
+      description: "Available values: standard, metric, imperial"
+    lang:
+      type: string
+      required: false
+      description: "Available values: ..."
+  return:
+    lat:
+    lon:
+    timezone:
+    timezone_offset:
+    current:
+      dt:
+      sunrise:
+      sunset:
+      temp:
+      feels_like:
+      pressure:
+      humidity:
+      dew_point:
+      clouds:
+      uvi:
+      visibility:
+      wind_speed:
+      wind_gust:
+      wind_deg:
+      rain:
+        1h:
+      snow:
+        1h:
+      weather:
+        id:
+        main:
+        description:
+        icon:
+    minutely:
+      dt:
+      precipitation:
+    hourly:
+      dt:
+      temp:
+      feels_like:
+      pressure:
+      dew_point:
+      clouds:
+      uvi:
+      visibility:
+      wind_speed:
+      wind_gust:
+      wind_deg:
+      pop:
+      rain:
+        1h:
+      snow:
+        1h:
+      weather:
+        id:
+        main:
+        description:
+        icon:
+    daily:
+      dt:
+      sunrise:
+      sunset:
+      moonrise:
+      moonset:
+      moon_phase:
+      summary:
+      temp:
+        morn:
+        day:
+        eve:
+        night:
+        min:
+        max:
+      feels_like:
+        morn:
+        day:
+        eve:
+        night:
+      pressure:
+      dew_point:
+      clouds:
+      uvi:
+      visibility:
+      wind_speed:
+      wind_gust:
+      wind_deg:
+      pop:
+      rain:
+        1h:
+      snow:
+        1h:
+      weather:
+        id:
+        main:
+        description:
+        icon:
+    alerts:
+      sender_name:
+      event:
+      start:
+      end:
+      description:
+      tags:
+- query: https://api.openweathermap.org/data/3.0/onecall/timemachine
+  parameters:
+    lat:
+      type: float
+      required: true
+    lon:
+      type: float
+      required: true
+    dt:
+      type: int
+      required: true
+    appid:
+      type: string
+      required: true
+    units:
+      type: string
+      required: false
+      description: "Available values: standard, metric, imperial"
+    lang:
+      type: string
+      required: false
+      description: "Available values: ..."
+  return:
+    lat:
+    lon:
+    timezone:
+    timezone_offset:
+    data:
+      dt:
+      sunrise:
+      sunset:
+      temp:
+      feels_like:
+      pressure:
+      humidity:
+      dew_point:
+      clouds:
+      uvi:
+      visibility:
+      wind_speed:
+      wind_gust:
+      wind_deg:
+      rain:
+        1h:
+      snow:
+        1h:
+      weather:
+        id:
+        main:
+        description:
+        icon:
+- query: https://api.openweathermap.org/data/3.0/onecall/day_summary
+  parameters:
+    lat:
+      type: float
+      required: true
+    lon:
+      type: float
+      required: true
+    date:
+      type: string
+      required: true
+      description: "YYYY-MM-DD"
+    appid:
+      type: string
+      required: true
+    units:
+      type: string
+      required: false
+      description: "Available values: standard, metric, imperial"
+    lang:
+      type: string
+      required: false
+      description: "Available values: ..."
+  return:
+    lat:
+    lon:
+    tz:
+    date:
+    units:
+    cloud_cover:
+      afternoon:
+    humidity:
+      afternoon:
+    precipitation:
+      total:
+    pressure:
+      afternoon:
+    temperature:
+      min:
+      max:
+      afternoon:
+      night:
+      evening:
+      morning:
+    wind:
+      max:
+        speed:
+        direction:
+- query: https://api.openweathermap.org/data/3.0/onecall/overview
+  parameters:
+    lat:
+      type: float
+      required: true
+    lon:
+      type: float
+      required: true
+    date:
+      type: string
+      required: true
+      description: "YYYY-MM-DD"
+    appid:
+      type: string
+      required: true
+    units:
+      type: string
+      required: false
+      description: "Available values: standard, metric, imperial"
+  return:
+    lat:
+    lon:
+    tz:
+    date:
+    units:
+    weather_overview:

@@ -1,0 +1,141 @@
+queries:
+- query: https://open.tan.fr/ewp/arrets.json/{latitude}/{longitude}
+  parameters:
+    latitude:
+      type:
+    longitude:
+      type:
+  return:
+  - codeLieu:
+    libelle:
+    distance:
+    ligne:
+    - numLigne:
+- query: https://open.tan.fr/ewp/arrets.json
+  return:
+  - codeLieu:
+    libelle:
+    distance:
+    ligne:
+    - numLigne:
+- query: https://open.tan.fr/ewp/horairesarret.json/{codeArret}/{numLigne}/{sens}
+  parameters:
+    codeArret:
+      type:
+    numLigne:
+      type:
+    sens:
+      type:
+      description:
+  return:
+    ligne:
+      numLigne:
+      typeligne:
+      directionSens1:
+      directionSens2:
+      accessible:
+      etatTrafic:
+    arret:
+      codeArret:
+      libelle:
+      accessible:
+    codeCouleur:
+    notes:
+    - code:
+      libelle:
+    horaires:
+    - heure:
+      passage:
+    prochainsHoraires:
+    - heure:
+      passage:
+    plageDeService:
+- query: https://open.tan.fr/ewp/horairesarret.json/{codeArret}/{numLigne}/{sens}/{date}
+  parameters:
+    codeArret:
+      type:
+    numLigne:
+      type:
+    sens:
+      type:
+      description:
+    date:
+      type:
+      description:
+  return:
+    ligne:
+      numLigne:
+      typeligne:
+      directionSens1:
+      directionSens2:
+      accessible:
+      etatTrafic:
+    arret:
+      codeArret:
+      libelle:
+      acecssible:
+    codeCouleur:
+    notes:
+    - code:
+      libelle:
+    horaires:
+    - heure:
+      passage:
+    prochainsHoraires:
+    - heure:
+      passage:
+    plageDeService:
+- query: https://open.tan.fr/ewp/tempsattente.json/{codeArret}
+  parameters:
+    codeArret:
+      type:
+  return:
+  - sens:
+    terminus:
+    infotrafic:
+    temps:
+    dernierDepart:
+    tempsReel:
+    ligne:
+    - numLigne:
+      typeLigne:
+    arret:
+      codeArret:
+- query: https://open.tan.fr/ewp/tempsattente.json/{codeArret}/{nombrePassages}
+  parameters:
+    codeArret:
+      type:
+    nombrePassages:
+      type:
+  return:
+  - sens:
+    terminus:
+    infotrafic:
+    temps:
+    dernierDepart:
+    tempsReel:
+    ligne:
+    - numLigne:
+      typeLigne:
+    arret:
+      codeArret:
+- query: https://open.tan.fr/ewp/tempsattente.json/{codeArret}/{nombrePassages}/{numLigne}
+  parameters:
+    codeArret:
+      type:
+    nombrePassages:
+      type:
+    numLigne:
+      type:
+  return:
+  - sens:
+    terminus:
+    infotrafic:
+    temps:
+    dernierDepart:
+    tempsReel:
+    ligne:
+      numLigne:
+      typeLigne:
+    arret:
+      codeArret:
